@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+    font-weight: 600;
+  }
+
+  .section-header {
+    @apply text-4xl md:text-[2.75rem] leading-tight font-bold tracking-tight;
+  }
+
+  .modern-card {
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modern-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+
+  .nav-scrolled {
+    box-shadow: 0 1px 0 0 rgb(15 23 42 / 0.06);
+    @apply bg-white/95 backdrop-blur-xl;
+  }
+
+  .domain-hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  }
+
+  .use-case-icon {
+    @apply w-[52px] h-[52px] flex items-center justify-center rounded-full text-slate-900;
+    background: linear-gradient(145deg, #c4b5fd, #7c3aed);
+  }
+
+  .conversion-cta {
+    box-shadow: 0 10px 15px -3px rgb(124 58 237 / 0.3),
+      0 4px 6px -4px rgb(124 58 237 / 0.3);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .conversion-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgb(124 58 237 / 0.4),
+      0 8px 10px -6px rgb(124 58 237 / 0.4);
+  }
+}

@@ -1,0 +1,67 @@
+---
+import { ACQUISITION_MAILTO, SITE } from '../config/site';
+---
+
+<section id="acquire" class="max-w-screen-2xl mx-auto px-6 sm:px-8 py-20">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="inline px-4 py-1 text-xs font-bold tracking-widest bg-slate-100 text-slate-600 rounded-2xl">PREMIUM ACQUISITION</div>
+      <h2 class="section-header tracking-tighter mt-4">Simple, secure &amp; confidential</h2>
+    </div>
+
+    <div class="space-y-5">
+      <div class="flex gap-6 bg-white border border-slate-200 rounded-3xl p-8 items-start">
+        <div class="w-9 h-9 flex-shrink-0 rounded-2xl bg-slate-900 text-white flex items-center justify-center font-mono font-bold text-xl">1</div>
+        <div class="flex-1 pt-1">
+          <div class="font-semibold text-xl tracking-tight">Submit Your Confidential Inquiry</div>
+          <div class="text-slate-600 mt-1.5">
+            Email <a href={`mailto:${SITE.email}`} class="font-medium text-violet-700 hover:underline">{SITE.email}</a> with your vision and offer range. All serious, qualified inquiries receive personal attention from the owner.
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-6 bg-white border border-slate-200 rounded-3xl p-8 items-start">
+        <div class="w-9 h-9 flex-shrink-0 rounded-2xl bg-slate-900 text-white flex items-center justify-center font-mono font-bold text-xl">2</div>
+        <div class="flex-1 pt-1">
+          <div class="font-semibold text-xl tracking-tight">Secure Escrow Transaction</div>
+          <div class="text-slate-600 mt-1.5">
+            We recommend Escrow.com or your preferred premium escrow provider for full transparency and protection on high-value acquisitions.
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-6 bg-white border border-slate-200 rounded-3xl p-8 items-start">
+        <div class="w-9 h-9 flex-shrink-0 rounded-2xl bg-slate-900 text-white flex items-center justify-center font-mono font-bold text-xl">3</div>
+        <div class="flex-1 pt-1">
+          <div class="font-semibold text-xl tracking-tight">Fast Professional Transfer</div>
+          <div class="text-slate-600 mt-1.5">
+            Domain registered with premium infrastructure. Push or authorization code transfer completed promptly after escrow clearance.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gradient-to-br from-slate-900 via-slate-950 to-black py-16 text-white">
+  <div class="max-w-screen-2xl mx-auto px-6 sm:px-8 text-center">
+    <div class="max-w-lg mx-auto">
+      <h2 class="font-display text-4xl sm:text-5xl tracking-tighter">Ready to own the monster in Phoenix tech?</h2>
+      <p class="mt-4 text-white/70">
+        PHX.Monster is the boldest, clearest domain positioned at the center of one of America’s most exciting emerging tech stories.
+      </p>
+
+      <div class="mt-9">
+        <a
+          href={ACQUISITION_MAILTO}
+          class="conversion-cta inline-flex items-center justify-center gap-x-3 px-10 py-[17px] text-lg font-semibold bg-white text-slate-950 hover:bg-violet-100 active:bg-white rounded-3xl shadow-2xl transition-all w-full sm:w-auto"
+        >
+          <span>Inquire About Acquisition</span>
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+
+      <div class="mt-5 text-xs text-white/50">Confidential &bull; Qualified buyers only &bull; Response within 24 hours</div>
+    </div>
+  </div>
+</section>
